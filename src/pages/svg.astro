@@ -1,0 +1,93 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import { Icon } from 'astro-icon/components';
+
+const metadata = {
+  title: 'Icons',
+};
+
+const icons = [
+  'Absperr-Organ',
+  'Ablauf',
+  'Absperrklappe',
+  'Anlege-Temperaturfühler',
+  'Anlege-Thermostat',
+  'Automatischer-Entlüfter',
+  'Dreiweg-Absperr-Organ',
+  'Dreiwegventil',
+  'Drosselklappe',
+  'Drosselventil',
+  'Druckmessfühler',
+  'Druckreduzierventil',
+  'Durchflussmessfühler',
+  'Eck-Absperr-Organ',
+  'EckSVmitGewichtsbelastung',
+  'Entleerhahn',
+  'Filter(Schmutzfänger)',
+  'Flanschverbindung',
+  'Hand-Entlüfter',
+  'Kugelhahn',
+  'Magnetantrieb',
+  'Manometer',
+  'Motorantrieb',
+  'Pumpe',
+  'Regler',
+  'Rückflussverhinderer',
+  'Rückschlagklappe',
+  'Schaltuhr',
+  'Schieber',
+  'Schlauchverbindung',
+  'Schwingungsdämpfer',
+  'SVmitFederbelastung',
+  'SVmitGewichtsbelastung',
+  'Signallampe',
+  'STADVentil',
+  'Tacosetter',
+  'Tauch-Temperaturfühler',
+  'Tauch-Thermostat',
+  'Thermometer',
+  'Ventil',
+  'Ventilator',
+  'Verdichter',
+  'Verschraubung',
+  'Vierweg-Absperr-Organ',
+  'Vierwegventil',
+  'Wärmemessung',
+];
+---
+
+<Layout metadata={metadata}>
+  <HeroText tagline="Design" title="Icons for your work" subtitle="Choose the perfect icon that aligns with your...." />
+  <div class="max-w-3xl mx-auto text-center p-3 rounded-md dark:shadow-none">
+    <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap sm:flex-row sm:justify-center text-xl gap-4">
+      <button
+        class="flex align-text-bottom justify-center  w-56 h-12 rounded-2xl text-white bg-primary dark:bg-slate-700 sm:mb-0"
+        type="button"
+      >
+        <a class="inline-flex items-center" download="" href="/src/assets/SIA_ICONS_normal.svg">
+          <Icon class="m-2" name="tabler:download" />Inkscape symbols</a
+        >
+        <!-- <button class="w-full h-10 sm:mb-0 rounded bg-slate-100  dark:bg-slate-700" type="button"> Inkscape</button> -->
+      </button>
+    </div>
+  </div>
+
+  <div class="flex flex-wrap mx-auto px-4 sm:px-6 max-w-7xl gap-4 p-6 justify-between max-sm:justify-center">
+    {
+      icons.map((icon) => (
+        <div class="flex flex-col text-center m-auto min-h-max h-52 w-40 px-3 py-2 rounded-lg shadow-lg dark:bg-slate-800">
+          <Icon class="m-auto" size="46" name={icon} />
+          <p class="text-sm text-wrap "> {icon} </p>
+          <button class=" px-5 py-2 rounded-lg m-auto mt-3 bg-slate-100 w-full dark:bg-slate-700 ">
+            <a class="inline-flex items-center " href="icons/+{icon}+.svg" download={icon}>
+              {' '}
+              <Icon class="m-1" name="tabler:download" />
+              Download
+            </a>
+          </button>
+        </div>
+      ))
+    }
+  </div>
+</Layout>

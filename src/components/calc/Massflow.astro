@@ -1,0 +1,52 @@
+---
+
+import NumberInput from "~/components/ui/NumberInput.astro";
+---
+
+<div class="max-w-fit rounded-lg shadow-lg my-4 px-6 py-4 dark:bg-slate-800">
+  <p class="text-3xl font-bold mb-3 dark:text-slate-300">Massflow</p>
+  <NumberInput label="power [kW]" name="dfa" id="q" value="10" />
+  <NumberInput label="massflow [kg/h]" name="dfa" id="m" value="3" />
+  <NumberInput label="delta t [k]" name="dfa" id="dt" value="7" />
+  <NumberInput
+    label="spez. c [kj/kg*k]"
+    name="dfa"
+    id="c"
+    value="4.187"
+    step="0.1"
+  />
+</div>
+
+<script>
+  function kvs(e) {
+    if (e.target.id == "m") {
+      q.value = parseFloat(
+        (e.target.value * c.value * dt.value) / 3600
+      ).toFixed(2);
+    }
+    if (e.target.id == "q") {
+      m.value = parseInt(
+        (e.target.value * 3600) / (c.value * dt.value)
+      );
+    }
+    if (e.target.id == "dt") {
+      m.value = parseInt(
+        (q.value * 3600) / (c.value * e.target.value)
+      );
+    }
+    if (e.target.id == "c") {
+      m.value = parseInt(
+        (q.value * 3600) / (dt.value * e.target.value)
+      );
+    }
+  }
+
+  m = document.getElementById("m");
+  q = document.getElementById("q");
+  c = document.getElementById("c");
+  dt = document.getElementById("dt");
+  document.getElementById("m").addEventListener("change", kvs);
+  document.getElementById("q").addEventListener("change", kvs);
+  document.getElementById("dt").addEventListener("change", kvs);
+  document.getElementById("c").addEventListener("change", kvs);
+</script>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="8.2700005mm"
+   height="5.3800001mm"
+   viewBox="0 0 8.2700005 5.3800001"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-172.65,-53.6)">
+    <path
+       id="STA_STADVentil"
+       style="opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0.2;stroke-dasharray:none"
+       d="m 177.81,56.8 a 1.01,1.02 0 0 1 -1.01,1.02 1.01,1.02 0 0 1 -1.01,-1.02 1.01,1.02 0 0 1 1.01,-1.02 1.01,1.02 0 0 1 1.01,1.02 z m -0.34,-3.05 1.69,1.01 m -0.85,-0.51 -1.01,1.69 m 0.42,1.36 3.05,1.53 m 0,-3.98 -3.05,1.52 m -1.78,0.93 -3.14,1.53 m 0,-3.98 3.14,1.52 m 4.83,-1.52 v 3.98 m -7.96,0 v -3.98" />
+  </g>
+</svg>

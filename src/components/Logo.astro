@@ -1,0 +1,12 @@
+---
+import { Image } from 'astro:assets';
+import { SITE } from 'astrowind:config';
+import svgLogo from '~/assets/favicons/favicon.svg'
+---
+
+<div
+  class="flex gap-3 ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white"
+>
+<Image src={svgLogo} alt="Logo" width="40" height="40" /> 
+<p>{SITE?.name}</p>
+</div>

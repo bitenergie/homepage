@@ -1,0 +1,26 @@
+---
+import Headline from '~/components/ui/Headline.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Kvs from '~/components/calc/Kvs.astro';
+import Massflow from '~/components/calc/Massflow.astro';
+import type { Contact as Props } from '~/types';
+
+const {
+  title = 'Calculator',
+  subtitle = '',
+  tagline = '',
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+---
+
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-7xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+  <Headline title={title} subtitle={subtitle} tagline={tagline} />
+    <div class="flex flex-wrap gap-6 justify-start max-sm:justify-center">
+      <Kvs/>
+      <Massflow/>
+    </div>
+</WidgetWrapper>

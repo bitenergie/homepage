@@ -1,0 +1,22 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import ContactUs from '~/components/widgets/Contact.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Calc from '~/components/widgets/Calc.astro';
+
+const metadata = {
+  title: 'Calculator',
+};
+
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget ******************* -->
+  <section class="max-w-7xl mx-auto ">
+    <Calc/>
+
+</section>
+
+
+</Layout>

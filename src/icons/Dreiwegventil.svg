@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="6.3140097mm"
+   height="8.3477697mm"
+   viewBox="0 0 6.3140097 8.3477697"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-8.5937575,-116.71491)">
+    <path
+       id="Dreiwegventil"
+       style="opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0.2;stroke-dasharray:none"
+       d="m 11.734578,120.88878 a 1.0004436,1.0005612 0 0 1 -1.000443,1.00057 1.0004436,1.0005612 0 0 1 -1.0004436,-1.00057 1.0004436,1.0005612 0 0 1 1.0004436,-1.00056 1.0004436,1.0005612 0 0 1 1.000443,1.00056 z m -0.534681,-0.8902 1.52459,-3.13367 m -3.9807295,0 1.5246005,3.13367 m 0.931539,1.78043 1.52459,3.13367 m -3.9807295,0 1.5246005,-3.13367 m -1.5246005,-4.9141 h 3.9807295 m 0,8.04777 H 8.7437575 m 2.8798395,-3.55872 3.13417,1.52458 m 0,-3.97949 -3.13417,1.52453 m 3.13417,-1.52453 v 3.97949" />
+  </g>
+</svg>
