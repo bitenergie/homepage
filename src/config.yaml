@@ -1,6 +1,6 @@
 site:
   name: BitEnergie
-  site: 'https://bitenergie.github.io/homepage/'
+  site: 'https://bitenergie.github.io/'
   base: '/homepage'
   trailingSlash: true
 
@@ -16,11 +16,11 @@ metadata:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: BitEnergie
     images:
       - url: '~/assets/images/default.png'
         width: 1200
-        height: 628
+        height: 630
     type: website
   twitter:
     handle: '@onwidget'

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="6.4299998mm"
+   height="5.9699998mm"
+   viewBox="0 0 6.4299998 5.9699998"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-174.58,-117.9)">
+    <path
+       id="Thermometer"
+       style="opacity:1;fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       d="m 180.78,121.69 h 0.08 m -1.61,0 h 1.52 m -0.76,0 h 0.08 m -0.08,2.03 v -2.03 m -0.42,-3.64 -0.51,1.1 m 0.51,-1.1 -1.1,0.59 m 0.59,0.51 -0.59,-0.51 m -3.13,3.64 3.39,-3.39 m 0,2.62 0.08,-0.68 m -0.42,1.19 0.34,-0.51 m -0.76,0.93 0.42,-0.42 m -1.02,0.76 0.59,-0.34 m -1.19,0.42 0.59,-0.08 m -1.19,0 0.59,0.08 m -1.19,-0.42 0.59,0.34 m -1.02,-0.76 0.42,0.42 m -0.68,-0.93 0.25,0.51 m -0.42,-1.19 0.17,0.68 m 0,-1.27 -0.17,0.59 m 0.42,-1.19 -0.25,0.59 m 0.68,-1.02 -0.42,0.42 m 1.02,-0.68 -0.59,0.26 m 1.19,-0.34 -0.59,0.08 m 1.19,0 -0.59,-0.08 m 1.19,0.34 -0.59,-0.26 m 1.02,0.68 -0.42,-0.42 m 0.76,1.02 -0.34,-0.59 m 0.42,1.19 -0.08,-0.59" />
+  </g>
+</svg>

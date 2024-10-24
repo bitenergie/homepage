@@ -3,6 +3,10 @@ import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
 import { Icon } from 'astro-icon/components';
 
+function svgUrl (name: string) {
+  return "/homepage/icons/"+ name +".svg"
+}
+
 const metadata = {
   title: 'Icons',
 };
@@ -65,8 +69,8 @@ const icons = [
         class="flex align-text-bottom justify-center  w-56 h-12 rounded-2xl text-white bg-primary dark:bg-slate-700 sm:mb-0"
         type="button"
       >
-        <a class="inline-flex items-center" download="" href="/src/assets/SIA_ICONS_normal.svg">
-          <Icon class="m-2" name="tabler:download" />Inkscape symbols</a
+        <a class="inline-flex items-center" download href="/homepage/SIA_ICONS_normal.svg">
+          <Icon class="m-2" name="tabler:download" />SVG symbols</a
         >
         <!-- <button class="w-full h-10 sm:mb-0 rounded bg-slate-100  dark:bg-slate-700" type="button"> Inkscape</button> -->
       </button>
@@ -80,7 +84,7 @@ const icons = [
           <Icon class="m-auto" size="46" name={icon} />
           <p class="text-sm text-wrap "> {icon} </p>
           <button class=" px-5 py-2 rounded-lg m-auto mt-3 bg-slate-100 w-full dark:bg-slate-700 ">
-            <a class="inline-flex items-center " href="icons/+{icon}+.svg" download={icon}>
+            <a class="inline-flex items-center " download href={svgUrl(icon)} >
               {' '}
               <Icon class="m-1" name="tabler:download" />
               Download

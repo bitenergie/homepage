@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="8.0930996mm"
+   height="8.0940104mm"
+   viewBox="0 0 8.0930996 8.0940104"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-173.63462,-181.27302)">
+    <g
+       id="Pumpe">
+      <path
+         id="path1003"
+         style="opacity:1;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.3;stroke-linecap:square;stroke-miterlimit:0.2;paint-order:markers stroke fill"
+         d="m 181.57772,185.32002 c 0,2.15226 -1.74454,3.89701 -3.89655,3.89701 -2.15201,0 -3.89655,-1.74475 -3.89655,-3.89701 0,-2.15226 1.74455,-3.897 3.89655,-3.897 2.152,0 3.89655,1.74474 3.89655,3.897 z" />
+      <path
+         id="path1004"
+         style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0.2;paint-order:markers fill stroke"
+         d="m 177.68117,181.88605 3.32205,3.43831 h -6.64411 z" />
+    </g>
+  </g>
+</svg>

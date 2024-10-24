@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="8.3500004mm"
+   height="7.9200001mm"
+   viewBox="0 0 8.3500004 7.9200001"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-6.55,-227.17)">
+    <path
+       id="SicherheitsventilmitFederbelastung"
+       style="opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0.2;stroke-dasharray:none"
+       d="m 11.71,232.92 a 1.02,1.02 0 0 1 -1.02,1.02 1.02,1.02 0 0 1 -1.02,-1.02 1.02,1.02 0 0 1 1.02,-1.02 1.02,1.02 0 0 1 1.02,1.02 z m -1.02,-1.02 v -1.19 m 0,-1.36 v -2.03 m 0,2.03 2.03,0.51 m -3.98,0.34 3.98,-0.34 m -3.98,0.34 1.95,0.51 m 0,-1.36 v -2.03 m 0,2.03 2.03,0.51 m -3.98,0.34 3.98,-0.34 m -3.98,0.34 1.95,0.51 m 0,2.2 v -1.19 m 0.93,1.61 3.13,1.61 m 0,-4.07 -3.13,1.61 m -1.78,0.85 -3.13,1.61 m 0,-4.07 3.13,1.61 m 4.91,-1.61 v 4.07 m -8.05,0 v -4.07" />
+  </g>
+</svg>

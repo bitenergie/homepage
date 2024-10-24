@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="8.3500004mm"
+   height="4.2800002mm"
+   viewBox="0 0 8.3500004 4.2800002"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-6.56,-166.78)">
+    <path
+       id="Druckreduzierventil"
+       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0.2;stroke-dasharray:none;stroke-opacity:1"
+       d="m 6.71,170.91 4.02,-1.99 -4.02,-1.99 z m 0,0 8.05,-3.98 m -8.05,0 8.05,3.98 m 0,0 H 6.71 m 8.05,-3.98 v 3.98 m -8.05,-3.98 h 8.05 m -8.05,3.98 v -3.98" />
+  </g>
+</svg>

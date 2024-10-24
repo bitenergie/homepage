@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="8.3500004mm"
+   height="8.3500004mm"
+   viewBox="0 0 8.3500004 8.3500004"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-6.55,-52.67)">
+    <path
+       id="Vierweg-Absperr-Organ"
+       style="opacity:1;fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       d="m 8.74,52.82 3.98,8.05 m -3.98,0 3.98,-8.05 m -3.98,0 h 3.98 m 0,8.05 H 8.74 m 6.01,-6.01 -8.05,3.98 m 0,-3.98 8.05,3.98 m 0,-3.98 v 3.98 m -8.05,0 v -3.98" />
+  </g>
+</svg>
