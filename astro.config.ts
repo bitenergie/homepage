@@ -36,6 +36,7 @@ export default defineConfig({
       src: './src/assets/favicons/favicon.svg',
     },
   }), sitemap(), mdx(), icon({
+    iconDir: "public/icons",
     include: {
       tabler: ['*'],
       'flat-color-icons': [
