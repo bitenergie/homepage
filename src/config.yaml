@@ -11,7 +11,7 @@ metadata:
   title:
     default: BitEnergie
     template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: "\U0001F680 BitEnergie Website with Docs & Blog."
   robots:
     index: true
     follow: true
