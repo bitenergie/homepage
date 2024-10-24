@@ -9,7 +9,7 @@ import NumberInput from "~/components/ui/NumberInput.astro";
   <NumberInput label="massflow [kg/h]" name="dfa" id="m" value="3" />
   <NumberInput label="delta t [k]" name="dfa" id="dt" value="7" />
   <NumberInput
-    label="spez. c [kj/kg*k]"
+    label="spez. c [kJ/kg*k]"
     name="dfa"
     id="c"
     value="4.187"
@@ -41,10 +41,10 @@ import NumberInput from "~/components/ui/NumberInput.astro";
     }
   }
 
-  m = document.getElementById("m");
-  q = document.getElementById("q");
-  c = document.getElementById("c");
-  dt = document.getElementById("dt");
+  let m = document.getElementById("m");
+  let q = document.getElementById("q");
+  let c = document.getElementById("c");
+  let dt = document.getElementById("dt");
   document.getElementById("m").addEventListener("change", kvs);
   document.getElementById("q").addEventListener("change", kvs);
   document.getElementById("dt").addEventListener("change", kvs);

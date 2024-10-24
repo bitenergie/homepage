@@ -1,6 +1,6 @@
 site:
   name: BitEnergie
-  site: 'https://www.bitenergie.ch/'
+  site: 'https://www.bitenergie.ch'
   base: ''
   trailingSlash: true
 

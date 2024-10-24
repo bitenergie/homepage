@@ -1,40 +1,49 @@
 ---
-import NumberInput from "~/components/ui/NumberInput.astro";
+import { Icon } from 'astro-icon/components';
+import NumberInput from '~/components/ui/NumberInput.astro';
 ---
 
-<div class="max-w-fit rounded-lg shadow-lg my-4 px-6 py-4 dark:bg-slate-800">
-  <p class="text-3xl font-bold mb-3 dark:text-slate-300">Kvs</p>
-  <NumberInput label="kv [m3/h]" name="dfa" id="kvs_kv" value="10" />
-  <NumberInput label="massflow [m3/h]" name="dfa" id="kvs_q" value="3" />
-  <NumberInput label="delta p [kPa]" name="dfa" id="kvs_dp" value="9" />
+<div class="relative max-w-fit rounded-lg shadow-lg my-4 px-6 py-4 dark:bg-slate-800">
+<div class="flex flex-row">
+
+
+  
+  <p class="text-3xl w-full font-bold mb-3 dark:text-slate-300">Kvs</p>
+      <div class="group flex relative">
+    <span class=" text-black dark:text-white px-2 py-1">
+      <Icon class="justify-self-end" name="tabler:help" size="32"></Icon></span>
+    <div
+      class="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-sm text-wrap text-gray-100 rounded-md absolute translate-x-1/2 
+      opacity-0 -translate-y-6 top-0 right-0 "
+      >Help</div
+    >
+  </div>
+</div>
+
+  <NumberInput label="kv [m3/h]" name="kvs_kv" id="kvs_kv" value="10" />
+  <NumberInput label="massflow [m3/h]" name="kvs_q" id="kvs_q" value="3" />
+  <NumberInput label="delta p [kPa]" name="kvs_dp" id="kvs_dp" value="9" />
 </div>
 
 <script>
   function massflow(e) {
     console.log(e.target.value, e.target.id);
-    if (e.target.id == "kvs_kv") {
-      kvs_dp.value = parseFloat(
-        (1 / Math.pow((e.target.value / kvs_q.value), 2)*100) 
-      ).toFixed(2);
+    if (e.target.id == 'kvs_kv') {
+      kvs_dp.value = parseFloat((1 / Math.pow(e.target.value / kvs_q.value, 2)) * 100).toFixed(2);
     }
-    if (e.target.id == "kvs_q") {
-      kvs_dp.value = parseFloat(
-      (1 / Math.pow((kvs_kv.value / e.target.value), 2)*100) 
-      ).toFixed(2);
+    if (e.target.id == 'kvs_q') {
+      kvs_dp.value = parseFloat((1 / Math.pow(kvs_kv.value / e.target.value, 2)) * 100).toFixed(2);
     }
-    if (e.target.id == "kvs_dp") {
-      kvs_kv.value = parseFloat(
-        (kvs_q.value * Math.floor((1/(kvs_dp.value/100))))
-      ).toFixed(2);
+    if (e.target.id == 'kvs_dp') {
+      kvs_kv.value = parseFloat(kvs_q.value * Math.floor(1 / (kvs_dp.value / 100))).toFixed(2);
     }
-
   }
 
-  kvs_kv = document.getElementById("kvs_kv");
-  kvs_q = document.getElementById("kvs_q");
-  kvs_dp = document.getElementById("kvs_dp");
-  
-  kvs_kv.addEventListener("change", massflow);
-  kvs_q.addEventListener("change", massflow);
-  kvs_dp.addEventListener("change", massflow);
+  let kvs_kv = document.getElementById('kvs_kv');
+  let kvs_q = document.getElementById('kvs_q');
+  let kvs_dp = document.getElementById('kvs_dp');
+
+  kvs_kv.addEventListener('change', massflow);
+  kvs_q.addEventListener('change', massflow);
+  kvs_dp.addEventListener('change', massflow);
 </script>

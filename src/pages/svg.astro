@@ -4,7 +4,7 @@ import HeroText from '~/components/widgets/HeroText.astro';
 import { Icon } from 'astro-icon/components';
 
 function svgUrl(name: string) {
-  return '/homepage/icons/' + name + '.svg';
+  return '/icons/' + name + '.svg';
 }
 
 const metadata = {
@@ -63,13 +63,13 @@ const icons = [
 
 <Layout metadata={metadata}>
   <HeroText tagline="Design" title="Icons for your work" subtitle="Choose the perfect icon that aligns with your...." />
-  <div class="flex mx-auto max-w-3xl  text-center p-3 rounded-md dark:shadow-none">
-    <div class="max-w-xs sm:max-w-md mx-auto flex flex-nowrap sm:flex-row  text-xl gap-4">
+  <div class="flex mx-auto max-w-3xl text-center p-3 rounded-md dark:shadow-none">
+    <div class="max-w-xs sm:max-w-md mx-auto flex flex-nowrap sm:flex-row text-xl gap-4">
       <button
         class="flex justify-center w-56 h-12 rounded-2xl text-white bg-primary hover:bg-sky-800 dark:bg-slate-700 dark:hover:bg-slate-900 sm:mb-0"
         type="button"
       >
-        <a class="inline-flex items-center" download href="/homepage/SIA_ICONS_normal.svg">
+        <a class="inline-flex items-center" download href="/SIA_ICONS_normal.svg">
           <Icon class="m-2" name="tabler:download" />SVG symbols</a
         >
         <!-- <button class="w-full h-10 sm:mb-0 rounded bg-slate-100  dark:bg-slate-700" type="button"> Inkscape</button> -->
@@ -77,23 +77,25 @@ const icons = [
     </div>
   </div>
 
-  <div class="flex flex-wrap mx-auto px-4 sm:px-6 max-w-7xl gap-4 p-6 justify-between max-sm:justify-center">
+  <div class="flex flex-row flex-wrap mx-auto px-4 sm:px-6 max-w-7xl gap-4 p-6 justify-start max-md:justify-center">
     {
       icons.map((icon) => (
-        <div class="flex flex-col text-center m-auto min-h-max h-52 w-40 px-3 py-2 rounded-lg shadow-lg dark:bg-slate-800">
-          <Icon class="m-auto" size="46" name={icon} />
+        <div
+          id={icon}
+          class="flex flex-col text-center m-auto min-h-max h-52 w-40 px-3 py-2 rounded-lg shadow-lg dark:bg-slate-800"
+        >
+          <Icon class="m-auto hover:scale-150" size="46" name={icon} />
           <p class="text-lg text-wrap "> {icon} </p>
           <div class="justify-self-end">
-
-          <button class=" px-5 py-2 rounded-lg m-auto mt-3 bg-slate-100 hover:bg-slate-300 w-full dark:bg-slate-700 dark:hover:bg-slate-900 ">
-            <a class="inline-flex items-center " download href={svgUrl(icon)}>
-              {' '}
-              <Icon class="m-1" name="tabler:download" />
-              Download
-            </a>
-          </button>
+            <button class=" px-5 py-2 rounded-lg m-auto mt-3 bg-slate-100 hover:bg-slate-300 w-full dark:bg-slate-700 dark:hover:bg-slate-900 ">
+              <a class="inline-flex items-center " download href={svgUrl(icon)}>
+                {' '}
+                <Icon class="m-1" name="tabler:download" />
+                Download
+              </a>
+            </button>
+          </div>
         </div>
-      </div>
       ))
     }
   </div>
