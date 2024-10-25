@@ -1,13 +1,27 @@
 ---
-
+import { Icon } from 'astro-icon/components';
 import NumberInput from "~/components/ui/NumberInput.astro";
 ---
 
 <div class="max-w-fit rounded-lg shadow-lg my-4 px-6 py-4 dark:bg-slate-800">
-  <p class="text-3xl font-bold mb-3 dark:text-slate-300">Massflow</p>
+  <div class="flex flex-row">
+    <p class="text-3xl w-full font-bold mb-3 dark:text-slate-300">Massflow</p>
+    <div class="group flex relative">
+      <span class="text-black dark:text-white px-2 py-1">
+        <Icon class="justify-self-end" name="tabler:help" size="32" /></span
+      >
+      <div
+        class="group-hover:opacity-100 transition-opacity bg-gray-600 px-1 text-lg text-wrap text-gray-100 rounded-md absolute translate-x-1/2
+      opacity-0 -translate-y-full top-0 right-0"
+      >
+        <strong class="text-nowrap">Q = (m*c*&#916st) / 3600</strong>
+
+      </div>
+    </div>
+  </div>
   <NumberInput label="power [kW]" name="dfa" id="q" value="10" />
-  <NumberInput label="massflow [kg/h]" name="dfa" id="m" value="3" />
-  <NumberInput label="delta t [k]" name="dfa" id="dt" value="7" />
+  <NumberInput label="massflow [kg/h]" name="dfa" id="m" value="1228" />
+  <NumberInput label="&#916 t [k]" name="dfa" id="dt" value="7" />
   <NumberInput
     label="spez. c [kJ/kg*k]"
     name="dfa"
