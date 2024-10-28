@@ -1,10 +1,10 @@
 ---
 import { Icon } from 'astro-icon/components';
-import NumberInput from "~/components/ui/NumberInput.astro";
+import NumberInput from '~/components/ui/NumberInput.astro';
 ---
 
 <div class="max-w-fit rounded-lg shadow-lg my-4 px-6 py-4 dark:bg-slate-800 w-64">
-  <div class="flex flex-row ">
+  <div class="flex flex-row">
     <p class="text-2xl w-full font-bold mb-3 dark:text-slate-300">Volumeflow</p>
     <div class="group flex relative">
       <span class="text-black dark:text-white px-2 py-1">
@@ -12,60 +12,59 @@ import NumberInput from "~/components/ui/NumberInput.astro";
       >
       <div
         class="group-hover:opacity-100 transition-opacity bg-sky-50 dark:bg-gray-600 px-1 text-lg text-wrap text-gray-100 rounded-md absolute translate-x-1/2
-      opacity-0 -translate-y-full top-0 right-0 w-40"
+      opacity-0 -translate-y-full top-0 right-0 w-52"
       >
-        <img  src="/icons/formula/waermestrom.png" />
+        <ul>
+          <li>bis <strong>1'000</strong> m3/h   <strong>3 </strong>m/s</li>
+          <li>bis <strong>2'000</strong> m3/h   <strong>4</strong> m/s</li>
+          <li>bis <strong>4'000</strong> m3/h   <strong>5</strong> m/s</li>
+          <li>bis <strong>10'000</strong> m3/h  <strong>6</strong> m/s</li>
+          <li>über <strong>10'000</strong> m3/h <strong>7</strong> m/s</li>
+        </ul>
       </div>
     </div>
   </div>
   <div class="inline-flex gap-3">
     <NumberInput label="Width [m]" name="dfa" id="vl_width" value="0.1" step="0.1" />
-    <NumberInput label="Heigth [m]" name="dfa" id="vl_heigth" value="0.2" step="0.1"/>
+    <NumberInput label="Heigth [m]" name="dfa" id="vl_heigth" value="0.2" step="0.1" />
   </div>
 
-  <NumberInput label="Area [m2]" name="dfa" id="vl_area" value="0.02" step="0.1"/>
+  <NumberInput label="Area [m2]" name="dfa" id="vl_area" value="0.02" step="0.1" />
   <NumberInput label="Flow [m3/h]" name="dfa" id="vl_flow" value="215" />
   <NumberInput label="Speed [m/s]" name="dfa" id="vl_speed" value="3" />
-
 </div>
 
 <script>
   function vl_flow_event(e) {
-    if (e.target.id == "vl_width") {
-      vl_area.value = parseFloat(
-        e.target.value * vl_heigth.value 
-      ).toFixed(2);
+    if (e.target.id == 'vl_width') {
+      vl_area.value = parseFloat(e.target.value * vl_heigth.value).toFixed(2);
+      vl_speed.value = parseFloat(vl_flow.value / (vl_area.value * 3600)).toFixed(2);
     }
-    if (e.target.id == "vl_heigth") {
-      vl_area.value = parseFloat(
-      e.target.value * vl_width.value 
-      ).toFixed(2);
+    if (e.target.id == 'vl_heigth') {
+      vl_area.value = parseFloat(e.target.value * vl_width.value).toFixed(2);
+      vl_speed.value = parseFloat(vl_flow.value / (vl_area.value * 3600)).toFixed(2);
     }
-    if (e.target.id == "vl_area") {
-      vl_speed.value = parseFloat(
-         vl_flow.value / (e.target.value *3600)
-      ).toFixed(2);
+    if (e.target.id == 'vl_area') {
+      vl_speed.value = parseFloat(vl_flow.value / (e.target.value * 3600)).toFixed(2);
+      vl_width.value = parseFloat(Math.sqrt(e.target.value)).toFixed(2)
+      vl_heigth.value = parseFloat(Math.sqrt(e.target.value)).toFixed(2)
     }
-    if (e.target.id == "vl_flow") {
-      vl_speed.value = parseFloat(
-        e.target.value / (vl_area.value * 3600), 
-      ).toFixed(2);
+    if (e.target.id == 'vl_flow') {
+      vl_speed.value = parseFloat(e.target.value / (vl_area.value * 3600)).toFixed(2);
     }
-    if (e.target.id == "vl_speed") {
-      vl_flow.value = parseFloat(
-        e.target.value * vl_area.value * 3600, 
-      ).toFixed(2);
+    if (e.target.id == 'vl_speed') {
+      vl_flow.value = parseFloat(e.target.value * vl_area.value * 3600).toFixed(2);
     }
   }
 
-  let vl_width = document.getElementById("vl_width");
-  let vl_heigth = document.getElementById("vl_heigth");
-  let vl_area = document.getElementById("vl_area");
-  let vl_flow = document.getElementById("vl_flow");
-  let vl_speed = document.getElementById("vl_speed");
-  document.getElementById("vl_width").addEventListener("change", vl_flow_event);
-  document.getElementById("vl_heigth").addEventListener("change", vl_flow_event);
-  document.getElementById("vl_area").addEventListener("change", vl_flow_event);
-  document.getElementById("vl_flow").addEventListener("change", vl_flow_event);
-  document.getElementById("vl_speed").addEventListener("change", vl_flow_event);
+  let vl_width = document.getElementById('vl_width');
+  let vl_heigth = document.getElementById('vl_heigth');
+  let vl_area = document.getElementById('vl_area');
+  let vl_flow = document.getElementById('vl_flow');
+  let vl_speed = document.getElementById('vl_speed');
+  document.getElementById('vl_width').addEventListener('change', vl_flow_event);
+  document.getElementById('vl_heigth').addEventListener('change', vl_flow_event);
+  document.getElementById('vl_area').addEventListener('change', vl_flow_event);
+  document.getElementById('vl_flow').addEventListener('change', vl_flow_event);
+  document.getElementById('vl_speed').addEventListener('change', vl_flow_event);
 </script>
