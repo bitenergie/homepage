@@ -4,6 +4,7 @@ import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
 import Kvs from '~/components/calc/Kvs.astro';
 import Massflow from '~/components/calc/Massflow.astro';
 import type { Contact as Props } from '~/types';
+import Volumeflow from '~/components/calc/Volumeflow.astro';
 
 const {
   title = 'Calculator',
@@ -22,5 +23,6 @@ const {
     <div class="flex flex-wrap gap-6 justify-start max-sm:justify-center">
       <Kvs/>
       <Massflow/>
+      <Volumeflow/>
     </div>
 </WidgetWrapper>
